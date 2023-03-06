@@ -1,0 +1,173 @@
+.container {
+    width: 60%;
+}
+
+#main {
+    height: 92vh;
+    display: flex;
+}
+
+#main h1 {
+    font-size: 3rem;
+}
+
+#main span {
+    font-size: 1.5rem;
+}
+
+.back img {
+    width: 55%;
+    height: 80%;
+    right: 18%;
+    top: 10%;
+}
+
+.top {
+    z-index: 2;
+    left: 20%;
+    top: 30%;
+}
+
+.fa-bars {
+    opacity: 0;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    opacity: .5;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a:hover {
+    opacity: 1;
+    border-bottom: 1px solid;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    background: #2a2a2a;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    z-index: 3;
+    opacity: .6;
+}
+
+
+.menu:hover .submenu {
+    display: flex;
+}
+
+
+.shutter a {
+    padding: 1rem;
+
+}
+
+
+.hcontact {
+    transition: .5s;
+}
+
+.hcontact:hover {
+    color: #00c1f3;
+}
+
+
+.abaut {
+    flex-direction: row;
+}
+
+#right {
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+
+#right>a {
+    display: block;
+    width: 10rem;
+    text-align: center;
+
+}
+
+#left>img {
+    width: 450px;
+    padding-top: 0;
+}
+
+.num1 {
+    top: 17%;
+}
+
+
+.num3 {
+    top: 2%;
+}
+
+.num4 {
+    top: 18%;
+}
+
+.careers>h1,
+.education>h1,
+.abilities>h1 {
+    width: 25%;
+    transition: .5s;
+
+}
+
+.careers>h1:hover,
+.education>h1:hover,
+.abilities>h1:hover {
+    background-color: aliceblue;
+    color: #c84d3d;
+}
+
+.careers,
+.education,
+.abilities {
+    width: 40%;
+
+}
+
+.position p {
+    width: 40%;
+    margin: auto;
+    padding-bottom: 1.5rem;
+}
+
+#Advice {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+
+.position {
+    padding-bottom: 4rem;
+}
+
+.question,
+.social {
+    width: 70%;
+    margin: auto;
+}
+
+.num1,
+.num2,
+.num3,
+.num4,
+.num5 {
+    right: 1%;
+}

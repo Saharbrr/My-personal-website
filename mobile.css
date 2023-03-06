@@ -1,0 +1,464 @@
+body {
+    margin: 0;
+    background-color: var(--bg--color);
+    color: aliceblue;
+    font-family: Varela Round, arial, sans-serif;
+}
+
+:root {
+    --bg--color: #3c3c3a;
+    --txt--color: #c84d3d;
+    --numb--color: #00c1f3;
+    --dark--bg: #2a2a2a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#main {
+    width: 100%;
+    height: 91vh;
+    position: relative;
+    text-align: left;
+}
+
+.fa-bars {
+    /* color: var(--numb--color); */
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+
+.nav a {
+    display: none;
+}
+
+.fa-bars:hover {
+    color: var(--numb--color);
+    scale: 1.3;
+}
+
+
+.shutter {
+    display: none;
+}
+
+.nav:hover a {
+    display: flex;
+}
+
+.nav a {
+    padding: 1rem;
+}
+
+.submenu {
+    display: none;
+}
+
+.hcontact:hover .shutter {
+    display: flex;
+    flex-direction: column;
+}
+
+.shutter a {
+    padding: 1rem;
+}
+
+
+header {
+    padding-top: 3rem;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+
+.pattern {
+    background: url(./Images/pattern.jpg);
+
+
+}
+
+#main span {
+    color: var(--txt--color);
+}
+
+
+.top {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.back {
+    /* position: relative; */
+    overflow: hidden;
+    /* background-attachment: scroll; */
+}
+
+.back img {
+    height: 40vh;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 43%;
+    filter: grayscale(1);
+    display: block;
+}
+
+
+.curtain {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent 60%, black);
+    top: 0;
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#main h1 {
+    margin: 0;
+    padding: 1rem 0rem;
+    font-size: 2.5rem;
+    color: var(--txt--color);
+
+}
+
+#main h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+#main h2 {
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    opacity: .7;
+}
+
+.scroll {
+    z-index: 2;
+}
+
+div.scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 30px;
+    background: white;
+    bottom: 1em;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes scroll {
+    0% {
+        height: 10px;
+    }
+
+    100% {
+        height: 55px;
+    }
+}
+
+.shortbio {
+    position: relative;
+    padding: 3rem 0;
+}
+
+.num1 {
+    position: absolute;
+    right: 2%;
+    top: 6.5%;
+    color: var(--numb--color)
+}
+
+.abaut {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#left {
+    width: 100%;
+}
+
+#left>img {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+
+
+#right {
+    width: 100%;
+    padding-top: 0;
+}
+
+#right>h1 {
+    color: var(--txt--color);
+    /* padding-bottom: 2rem; */
+}
+
+
+#right>p {
+    display: inline;
+    line-height: 2;
+}
+
+#cv {
+    padding: .5rem 1.5rem;
+    border: 1px solid var(--numb--color);
+    margin-top: 1rem;
+    transition: .5s;
+    display: block;
+    width: 50%;
+    text-align: center;
+
+}
+
+#cv:hover {
+    background-color: var(--txt--color);
+    border: #c84d3d;
+}
+
+#current {
+    position: relative;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+    background-color: var(--dark--bg);
+}
+
+#current h1 {
+    color: var(--txt--color);
+}
+
+.num2 {
+    position: absolute;
+    right: 2%;
+    top: 31%;
+    color: var(--numb--color)
+}
+
+.num3 {
+    position: absolute;
+    right: 2%;
+    top: 1.6%;
+    color: var(--numb--color)
+}
+
+.resume {
+    position: relative;
+    padding: 3rem 0;
+}
+
+.carcontain {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+}
+
+.careers>h1,
+.education>h1,
+.abilities>h1 {
+    background-color: var(--txt--color);
+    padding: .5rem 1rem;
+    width: 45%;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.datum {
+    margin: 1rem 3rem;
+    opacity: .6;
+}
+
+.title>div {
+    padding-left: 2rem;
+}
+
+.title a {
+    opacity: .6;
+    color: var(--numb--color);
+    padding-left: 1rem;
+
+}
+
+.title p {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.educontain {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .fa-circle {
+    color: var(--txt--color);
+} */
+
+.title.abilities {
+    display: flex;
+}
+
+.resume p {
+    line-height: 1.5;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.row span {
+    display: block;
+    margin-top: 1rem;
+}
+
+.detail h3 {
+    color: var(--numb--color);
+    padding-top: 1.5rem;
+}
+
+.skill {
+    width: 52%;
+}
+
+.star {
+    width: 48%;
+    text-align: right;
+}
+
+.empty {
+    color: black;
+
+}
+
+.star>div {
+    margin-top: 1rem;
+}
+
+.num4 {
+    position: absolute;
+    right: 2%;
+    top: 15%;
+    color: var(--numb--color)
+}
+
+.position {
+    position: relative;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+    background-color: var(--dark--bg);
+
+}
+
+.position h1 {
+    color: var(--txt--color);
+}
+
+.position p {
+    text-align: left;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
+#Advice {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1.5px solid var(--numb--color);
+    width: 70%;
+    text-align: left;
+    margin: auto;
+    transition: .5s;
+}
+
+#Advice:hover {
+    background-color: var(--numb--color);
+    color: var(--dark--bg);
+
+}
+
+.num5 {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+    color: var(--numb--color)
+}
+
+.contact {
+    position: relative;
+    padding: 3rem 1rem;
+}
+
+.small span {
+    color: var(--txt--color);
+}
+
+.social {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-between;
+}
+
+#contact {
+    color: var(--txt--color);
+
+}
+
+#icon>i {
+    padding: 0 0.7rem;
+    color: var(--numb--color);
+    transition: .5s;
+
+}
+
+#icon>i:hover {
+    color: aliceblue;
+
+}
